@@ -4,9 +4,6 @@ import {
   FileText,
   Zap,
   CheckCircle,
-  AlertCircle,
-  Star,
-  Play,
   MessageSquare,
 } from "lucide-react";
 import NavBar from "../components/shared/NavBar";
@@ -45,11 +42,11 @@ const SitbrainLanding = () => {
               <div>
                 <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
                   Improve your{" "}
-                  <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+                  <span className=" bg-clip-text text-transparent bg-gradient-to-b from-[#09529F] to-[#6ADAF6]">
                     IS Report
                   </span>{" "}
                   with{" "}
-                  <span className="bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
+                  <span className=" bg-clip-text text-transparent bg-gradient-to-b from-[#09529F] to-[#6ADAF6]">
                     SITBRAIN
                   </span>
                 </h1>
@@ -61,7 +58,7 @@ const SitbrainLanding = () => {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <button onClick={() => navigate("/signin")} className="group relative px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl font-semibold text-white hover:from-blue-600 hover:to-purple-700 hover:cursor-pointer transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/25">
+                <button onClick={() => navigate("/signin")} className="group relative px-8 py-4 bg-gradient-to-r from-blue-500 to-blue-300 rounded-xl font-semibold text-white hover:from-blue-600 hover:to-cyan-400 hover:cursor-pointer transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-blue-400/25">
                   <span className="flex items-center justify-center">
                     Try SITBRAIN
                     <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
@@ -152,7 +149,7 @@ const SitbrainLanding = () => {
               <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-700/50">
                 <div className="flex items-center justify-between mb-6">
                   <div className="flex items-center space-x-3">
-                    <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg flex items-center justify-center">
+                    <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-300 rounded-lg flex items-center justify-center">
                       <FileText className="w-4 h-4 text-white" />
                     </div>
                     <span className="font-semibold">Your IS Report</span>
@@ -174,7 +171,7 @@ const SitbrainLanding = () => {
               <div className="w-30 h-auto bg-gradient-to-r  rounded-lg flex items-center justify-center">
                 <img src={SITBrainLogo} className="w-full h-auto" />
               </div>
-              <span className="font-semibold text-2xl bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
+              <span className="font-semibold text-2xl bg-gradient-to-r from-blue-500 to-blue-300 bg-clip-text text-transparent">
                 SITBRAIN Analysis
               </span>
               <img
@@ -267,7 +264,7 @@ const SitbrainLanding = () => {
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center group">
-              <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+              <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-300 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                 <FileText className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-xl font-bold mb-4">1. Upload Report</h3>
@@ -277,7 +274,7 @@ const SitbrainLanding = () => {
             </div>
 
             <div className="text-center group">
-              <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+              <div className="w-16 h-16 bg-gradient-to-b from-blue-300 to-blue-500 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                 <Brain className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-xl font-bold mb-4">2. AI Analysis</h3>
@@ -287,7 +284,7 @@ const SitbrainLanding = () => {
             </div>
 
             <div className="text-center group">
-              <div className="w-16 h-16 bg-gradient-to-r from-pink-500 to-cyan-500 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+              <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                 <CheckCircle className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-xl font-bold mb-4">3. Get Feedback</h3>
@@ -330,7 +327,7 @@ const SitbrainLanding = () => {
               Join thousands of SIT students who are already using SITBRAIN
             </p>
 
-            <button onClick={() => navigate("/signin")} className="group relative px-12 py-4 bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl font-semibold text-white hover:from-blue-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:cursor-pointer hover:shadow-blue-500/25 text-lg">
+            <button onClick={() => navigate("/signin")} className="group relative px-12 py-4 bg-gradient-to-r from-blue-500 to-blue-300 rounded-xl font-semibold text-white hover:from-blue-600 hover:to-cyan-300 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:cursor-pointer hover:shadow-blue-500/25 text-lg">
               <span className="flex items-center justify-center">
                 Get Started Now
                 <ArrowRight className="w-6 h-6 ml-2 group-hover:translate-x-1 transition-transform" />

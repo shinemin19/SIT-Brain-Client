@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Eye, EyeOff, Mail, User, Lock, Loader2 } from "lucide-react";
 import SitBrainLogo from "../../assets/navbar/sitbrain_logo.svg";
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 interface FormErrors {
   username?: string;
@@ -126,25 +126,23 @@ const SignInForm = () => {
                 className="h-full w-full object-contain"
               />
             </div> */}
-            <div className="w-24 h-24 rounded-2xl flex items-center justify-center mx-auto shadow-2xl mb-2 shadow-purple-500/25 relative">
+            <div className="w-24 h-24 rounded-2xl flex items-center justify-center mx-auto shadow-2xl mb-2 relative">
               <img 
                 src={SitBrainLogo} 
                 alt="SIT Brain Logo" 
                 className="w-20 h-20 object-contain"
               />
-              <div className="absolute inset-0 rounded-2xl blur-xl opacity-50 animate-pulse"></div>
             </div>
-            <h1 className="text-3xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent mb-2">
+            <h1 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-[#09529F] to-[#6ADAF6] my-2">
               Welcome
             </h1>
-            <p className="text-gray-400">
+            <p className="text-gray-500">
               Sign in to continue your learning journey
             </p>
           </div>
 
           {/* Sign in card */}
           <div className="relative group mb-8">
-            {/* bg-gradient-to-r from-purple-500/20 to-blue-500/20 */}
             <div className="absolute inset-0 rounded-2xl blur-xl opacity-75"></div>
             <div className="relative bg-white/10 backdrop-blur-xl rounded-2xl py-8 px-12 border border-white/20 shadow-2xl">
               {/* General Error */}
@@ -179,7 +177,7 @@ const SignInForm = () => {
                       value={formData.username}
                       onChange={handleInputChange}
                       placeholder="68xxxxxxxxx or name@kmutt.ac.th"
-                      className={`w-full pl-10 pr-4 py-3 bg-white/5 border rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent text-white placeholder-gray-400 backdrop-blur-sm transition-all duration-200 ${
+                      className={`w-full pl-10 pr-4 py-3 bg-white/5 border rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent text-gray-700 placeholder-gray-400 backdrop-blur-sm transition-all duration-200 ${
                         errors.username
                           ? "border-red-500/50"
                           : "border-white/20 hover:border-white/30"
@@ -213,7 +211,7 @@ const SignInForm = () => {
                       value={formData.password}
                       onChange={handleInputChange}
                       placeholder="Enter your password"
-                      className={`w-full pl-10 pr-12 py-3 bg-white/5 border rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent text-white placeholder-gray-400 backdrop-blur-sm transition-all duration-200 ${
+                      className={`w-full pl-10 pr-12 py-3 bg-white/5 border rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent text-gray-700 placeholder-gray-400 backdrop-blur-sm transition-all duration-200 ${
                         errors.password
                           ? "border-red-500/50"
                           : "border-white/20 hover:border-white/30"
@@ -244,7 +242,7 @@ const SignInForm = () => {
                   <button
                     onClick={handleSubmit}
                     disabled={isLoading}
-                    className="w-full py-3 px-4 bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 disabled:from-gray-600 disabled:to-gray-600 disabled:cursor-not-allowed text-white font-semibold rounded-xl transition-all duration-300 shadow-lg shadow-purple-500/25 hover:shadow-purple-500/40 hover:scale-[1.02] flex items-center justify-center gap-2"
+                    className="w-full py-3 px-4 bg-gradient-to-t from-[#09529F] to-[#6ADAF6] hover:from-blue-600 hover:to-cyan-400 disabled:from-gray-600 disabled:to-gray-600 disabled:cursor-not-allowed text-white font-semibold rounded-xl transition-all duration-300 shadow-lg shadow-purple-500/25 hover:shadow-purple-500/40 hover:scale-[1.02] flex items-center justify-center gap-2"
                   >
                     {isLoading ? (
                       <>
@@ -303,16 +301,6 @@ const SignInForm = () => {
                 </div> */}
               </div>
             </div>
-
-            {/* Footer text */}
-            {/* <div className="mt-8 text-center">
-              <p className="text-gray-400 text-sm">
-                Don't have an account?{" "}
-                <button className="text-purple-400 hover:text-purple-300 font-medium transition-colors">
-                  Contact your administrator
-                </button>
-              </p>
-            </div> */}
           </div>
         </div>
       </div>

@@ -42,7 +42,7 @@ const HomePage: React.FC = () => {
           </div>
           
           {/* Title with gradient text */}
-          <h1 className="text-6xl md:text-7xl font-black mb-4 bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent leading-tight">
+          <h1 className="text-6xl md:text-7xl font-black mb-4 bg-gradient-to-b from-blue-500 to-blue-300 bg-clip-text text-transparent leading-tight">
             SITBRAIN
           </h1>
           
@@ -57,7 +57,7 @@ const HomePage: React.FC = () => {
           
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <button onClick={handleChatClick} className="group relative bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 text-white px-8 py-4 rounded-2xl font-semibold transition-all duration-300 shadow-2xl shadow-purple-500/25 hover:shadow-purple-500/40 hover:scale-105 flex items-center justify-center gap-3">
+            <button onClick={handleChatClick} className="group relative bg-gradient-to-r from-blue-600 via-blue-400 to-blue-300 hover:from-blue-600 hover:to-cyan-400 text-white px-8 py-4 rounded-2xl font-semibold transition-all duration-300 shadow-2xl shadow-purple-500/25 hover:shadow-purple-500/40 hover:scale-105 flex items-center justify-center gap-3">
               <MessageCircle className="w-5 h-5" />
               Chat and ask about paper
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
