@@ -22,7 +22,7 @@ const HomePage: React.FC = () => {
     navigate('/assistant');
   };
   return (
-    <div className="min-h-screen bg-gray-50 relative overflow-hidden pt-20">
+    <div className="min-h-screen bg-gray-50 flex justify-center items-center relative overflow-hidden pt-20 xl:pt-0">
       <NavBar isLoggedIn={true} currentPage="home" userData={userData} />
       {/* Main content */}
       <div className="relative z-10 flex flex-col items-center justify-center">
