@@ -29,6 +29,16 @@ export const mainRouter = createBrowserRouter([
         path: "/home",
         element: <HomePage />,
       },
+      // Enhanced Chat Routes
+      {
+        path: "/chat/:studentId/:chatId",
+        element: <ChatPage />,
+      },
+      {
+        path: "/chat/:studentId",
+        element: <ChatPage />,
+      },
+      // Legacy chat route redirect (optional - for backward compatibility)
       {
         path: "/chat/:id",
         element: <ChatPage />,
